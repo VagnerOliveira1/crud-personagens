@@ -1,0 +1,15 @@
+<h1>Cadastro de Poderes</h1>
+<%= form_for @poderes do |f| %>
+<p>
+<%= f.label :nome %> <br />
+<%= f.text_field :nome %>
+</p>
+<p>
+<%= f.label :tipo %> <br />
+<%= f.text_field :tipo %>
+</p>
+
+<p>
+<%= f.submit %>
+</p>
+<% end %>
