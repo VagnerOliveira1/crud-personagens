@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Personagens</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Forca</th>
+      <th>Resistencia</th>
+      <th>Agilidade</th>
+      <th>Destreza</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personagens.each do |personagem| %>
+      <tr>
+        <td><%= personagem.nome %></td>
+        <td><%= personagem.forca %></td>
+        <td><%= personagem.resistencia %></td>
+        <td><%= personagem.agilidade %></td>
+        <td><%= personagem.destreza %></td>
+        <td><%= link_to 'Show', personagem %></td>
+        <td><%= link_to 'Edit', edit_personagem_path(personagem) %></td>
+        <td><%= link_to 'Destroy', personagem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Personagem', new_personagem_path %>

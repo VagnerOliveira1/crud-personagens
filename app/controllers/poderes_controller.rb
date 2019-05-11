@@ -1,4 +1,7 @@
 class PoderesController < ApplicationController
+    def index
+        @poderes = Poder.all
+    end
     def new
         @poder = Poder.new
     end
@@ -14,4 +17,5 @@ class PoderesController < ApplicationController
         end
 
     end
+
 end

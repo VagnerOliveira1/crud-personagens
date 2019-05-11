@@ -1,4 +1,7 @@
 class PersonagensController < ApplicationController
+    def index
+        @personagens = Personagem.all
+    end
     def new
         @personagem = Personagem.new
     end
@@ -8,11 +11,12 @@ class PersonagensController < ApplicationController
     end
 
     def create
-        @personagem = Personagem.new(params[:peesonagem])
+        @personagem = Personagem.new(params[:personagem])
         if @personagem.save
             redirect_to @personagem, :notice =>' Personagem cadastrado com sucesso!!!'
         else
             render :new
         end
     end
+
 end
