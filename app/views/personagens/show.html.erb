@@ -1,9 +1,10 @@
 <p id="notice"><%= notice %> </p>
-<h2>Perfil: <%= @personagem.nome %> </h2>
+<h2>Personagem: <%= @personagem.nome %> </h2>
 <ul>
 <li>Força: <%= @personagem.forca %> </li>
 <li>Resistencia: <%= @personagem.resistencia %> </li>
 <li>Agilidade: <%= @personagem.agilidade %> </li>
 <li>Destreza: <%= @personagem.destreza %> </li>
 </ul>
-<%= link_to 'Editar Perfil', edit_personagem_path(@personagem) %>
+<%= link_to 'Editar Personagem', edit_personagem_path(@personagem) %>
+<%= link_to 'Home', root_path %>

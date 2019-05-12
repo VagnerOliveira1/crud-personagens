@@ -18,4 +18,25 @@ class PoderesController < ApplicationController
 
     end
 
+    def poder_params
+        params.
+            require(:poder).
+            permit(:nome, :tipo)
+    end
+
+    def edit
+        @poder = Poder.find(params[:id])
+    end
+
+    def update
+        @poder = Poder.find(params[:id])
+        if @poder.update(poder_params)
+            redirect_to @poder,
+                notice:'Poder atualizado!!!'
+        else
+            render action: :edit
+        end
+    end
+
+
 end

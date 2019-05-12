@@ -22,9 +22,9 @@
         <td><%= personagem.resistencia %></td>
         <td><%= personagem.agilidade %></td>
         <td><%= personagem.destreza %></td>
-        <td><%= link_to 'Show', personagem %></td>
-        <td><%= link_to 'Edit', edit_personagem_path(personagem) %></td>
-        <td><%= link_to 'Destroy', personagem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', personagem %></td>
+        <td><%= link_to 'Editar', edit_personagem_path(personagem) %></td>
+        <!-- <td><%= link_to 'Destroy', personagem, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Personagem', new_personagem_path %>
+<%= link_to 'Novo', new_personagem_path %>
