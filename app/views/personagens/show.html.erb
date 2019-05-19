@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+  <body>
+
+
 <p id="notice"><%= notice %> </p>
 <h2>Personagem: <%= @personagem.nome %> </h2>
 <ul>
@@ -6,5 +18,34 @@
 <li>Agilidade: <%= @personagem.agilidade %> </li>
 <li>Destreza: <%= @personagem.destreza %> </li>
 </ul>
-<%= link_to 'Editar Personagem', edit_personagem_path(@personagem) %>
-<%= link_to 'Home', root_path %>
+
+    <h2>Poderes</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Tipo</th>
+          <th colspan="3">Opções</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @personagem.poderes.each do |poder| %>
+          <tr>
+            <td><%= poder.nome %></td>
+            <td><%= poder.tipo %></td>
+            <td><%= link_to 'Ver', poder, class: "btn btn-success" %></td>
+            <td><%= link_to 'Editar', edit_poder_path(poder), class: "btn btn-warning" %></td>
+            <td><%= link_to 'Excluir', poder, method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-danger" %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+
+
+<%= link_to 'Editar Personagem', edit_personagem_path(@personagem) ,class:"btn btn-warning"%>
+<%= link_to 'Home', root_path ,class: "btn btn-primary"%>
+
+
+</html>

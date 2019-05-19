@@ -1,6 +1,11 @@
 class PersonagensController < ApplicationController
     def index
-        @personagens = Personagem.all
+
+        if  params[:forca].present?
+            @personagens = Personagem.where(forca: params[:forca])
+        else
+            @personagens = Personagem.all
+        end
     end
     def new
         @personagem = Personagem.new
@@ -38,6 +43,12 @@ class PersonagensController < ApplicationController
         else
             render action: :edit
         end
+    end
+
+    def destroy
+        @personagem = Personagem.find(params[:id])
+        @personagem.destroy
+        redirect_to personagens_url
     end
 
 end

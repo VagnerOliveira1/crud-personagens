@@ -38,5 +38,11 @@ class PoderesController < ApplicationController
         end
     end
 
+    def destroy
+        @poder = Poder.find(params[:id])
+        @poder.destroy
+        redirect_to poderes_url
+    end
+
 
 end
