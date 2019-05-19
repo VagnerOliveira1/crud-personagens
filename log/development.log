@@ -8032,3 +8032,427 @@ Processing by PersonagensController#index as HTML
 Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/personagens" for 127.0.0.1 at 2019-05-19 12:17:09 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.5ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/personagens/5" for 127.0.0.1 at 2019-05-19 12:17:12 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  [1m[36mPoder Load (0.4ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 5]]
+  Rendered personagens/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-19 12:17:14 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-05-19 12:17:15 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-05-19 12:17:17 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  [1m[36mPoder Load (0.2ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 1]]
+  Rendered personagens/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 26ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/poderes/1" for 127.0.0.1 at 2019-05-19 12:17:22 -0300
+Processing by PoderesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPoder Load (0.1ms)[0m  [1m[34mSELECT  "poderes".* FROM "poderes" WHERE "poderes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering poderes/show.html.erb within layouts/application
+  Rendered poderes/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/poderes/1/edit" for 127.0.0.1 at 2019-05-19 12:17:23 -0300
+Processing by PoderesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPoder Load (0.1ms)[0m  [1m[34mSELECT  "poderes".* FROM "poderes" WHERE "poderes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering poderes/edit.html.erb within layouts/application
+  Rendered poderes/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-19 12:17:24 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-05-19 12:17:26 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/personagens/new" for 127.0.0.1 at 2019-05-19 12:17:29 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-19 12:17:31 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-05-19 12:17:32 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/personagens/13" for 127.0.0.1 at 2019-05-19 12:17:35 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  [1m[36mPoder Load (0.1ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 13]]
+  Rendered personagens/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/personagens/13/edit" for 127.0.0.1 at 2019-05-19 12:17:37 -0300
+Processing by PersonagensController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens/13/edit" for 127.0.0.1 at 2019-05-19 13:05:04 -0300
+Processing by PersonagensController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/personagens/13" for 127.0.0.1 at 2019-05-19 13:05:06 -0300
+Processing by PersonagensController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UYXQrKmEQWb5c7qvbpIN/03dWp4D/MPmZGNIrJe2QO3Fj1SVKFcAEqR6O5+cqwNrCAXmYI+4alVvzHXBW+g3Sw==", "personagem"=>{"nome"=>"Teste", "forca"=>"4", "resistencia"=>"7", "agilidade"=>"8", "destreza"=>"10"}, "commit"=>"Atualizar ", "id"=>"13"}
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/personagens/13
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens/13" for 127.0.0.1 at 2019-05-19 13:05:06 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  [1m[36mPoder Load (0.1ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 13]]
+  Rendered personagens/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-19 13:05:07 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-05-19 13:05:09 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.9ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-05-19 13:05:11 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  [1m[36mPoder Load (0.7ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 1]]
+  Rendered personagens/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-19 13:05:13 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-05-19 13:05:15 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.4ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-05-19 13:05:17 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  [1m[36mPoder Load (0.2ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 1]]
+  Rendered personagens/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/poderes/2/edit" for 127.0.0.1 at 2019-05-19 13:05:19 -0300
+Processing by PoderesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPoder Load (0.1ms)[0m  [1m[34mSELECT  "poderes".* FROM "poderes" WHERE "poderes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering poderes/edit.html.erb within layouts/application
+  Rendered poderes/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-19 13:05:21 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-05-19 13:05:22 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/personagens/4/edit" for 127.0.0.1 at 2019-05-19 13:05:23 -0300
+Processing by PersonagensController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/personagens/4" for 127.0.0.1 at 2019-05-19 13:05:26 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  [1m[36mPoder Load (0.1ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 4]]
+  Rendered personagens/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-19 13:05:31 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-05-19 13:05:33 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/personagens?utf8=%E2%9C%93&forca=10&commit=Filtrar" for 127.0.0.1 at 2019-05-19 13:05:40 -0300
+Processing by PersonagensController#index as HTML
+  Parameters: {"utf8"=>"✓", "forca"=>"10", "commit"=>"Filtrar"}
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens" WHERE "personagens"."forca" = ?[0m  [["forca", 10]]
+  Rendered personagens/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens?utf8=%E2%9C%93&forca=1&commit=Filtrar" for 127.0.0.1 at 2019-05-19 13:05:44 -0300
+Processing by PersonagensController#index as HTML
+  Parameters: {"utf8"=>"✓", "forca"=>"1", "commit"=>"Filtrar"}
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens" WHERE "personagens"."forca" = ?[0m  [["forca", 1]]
+  Rendered personagens/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens/12" for 127.0.0.1 at 2019-05-19 13:05:46 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  [1m[36mPoder Load (0.1ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 12]]
+  Rendered personagens/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens/new" for 127.0.0.1 at 2019-05-19 13:06:08 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/personagens" for 127.0.0.1 at 2019-05-19 13:06:11 -0300
+Processing by PersonagensController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UU5Vy5xiZP7qRhcvEYCd4g4Tb/ITUcVToikQFWRfUl2haRSsgyWMyiN5aT5/jRlK99ove30nA8TxaRIl2WUHew==", "personagem"=>{"nome"=>"", "forca"=>"", "resistencia"=>"", "agilidade"=>"", "destreza"=>""}, "commit"=>"Criar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-19 13:06:14 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-05-19 13:06:16 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-05-19 13:06:18 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  [1m[36mPoder Load (0.1ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 1]]
+  Rendered personagens/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-19 13:06:22 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-05-19 13:06:23 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens/new" for 127.0.0.1 at 2019-05-19 13:06:27 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-19 13:06:32 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens/new" for 127.0.0.1 at 2019-05-19 13:06:34 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-05-19 13:08:03 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens?utf8=%E2%9C%93&forca=0&commit=Filtrar" for 127.0.0.1 at 2019-05-19 13:08:11 -0300
+Processing by PersonagensController#index as HTML
+  Parameters: {"utf8"=>"✓", "forca"=>"0", "commit"=>"Filtrar"}
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens" WHERE "personagens"."forca" = ?[0m  [["forca", 0]]
+  Rendered personagens/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens/new" for 127.0.0.1 at 2019-05-19 13:08:14 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-19 13:08:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-05-19 13:08:17 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens/13" for 127.0.0.1 at 2019-05-19 13:08:21 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  [1m[36mPoder Load (0.1ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 13]]
+  Rendered personagens/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-19 13:08:22 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-05-19 13:08:24 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
