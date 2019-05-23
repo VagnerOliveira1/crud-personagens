@@ -48,7 +48,8 @@ class PersonagensController < ApplicationController
     def destroy
         @personagem = Personagem.find(params[:id])
         @personagem.destroy
-        redirect_to personagens_url
+        redirect_to personagens_url, notice: "Personagem Excluido"
+
     end
 
 end

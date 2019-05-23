@@ -43,7 +43,9 @@
         <td><%= personagem.destreza %></td>
         <td><%= link_to 'Ver', personagem, class: "btn btn-success" %></td>
         <td><%= link_to 'Editar', edit_personagem_path(personagem), class: "btn btn-warning" %></td>
-         <td><%= link_to 'Excluir', personagem, method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-danger" %>
+
+         <td><%= link_to 'Excluir',personagem_path(personagem), method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-danger" %>
+
       </tr>
     <% end %>
   </tbody>
