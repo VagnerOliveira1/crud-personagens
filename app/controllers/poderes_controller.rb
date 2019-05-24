@@ -4,14 +4,16 @@ class PoderesController < ApplicationController
     end
     def new
         @poder = Poder.new
+        @personagens = Personagem.all
     end
     def show
         @poder = Poder.find(params[:id])
+
     end
     def create
-        @poder = Poder.new(params[:user])
+        @poder = Poder.new(poder_params)
         if @poder.save
-            redirect_to @user, :notice => 'Poder registrado para o personagem'
+            redirect_to @poder, :notice => 'Poder registrado para o personagem'
         else
             render :new
         end
@@ -21,7 +23,7 @@ class PoderesController < ApplicationController
     def poder_params
         params.
             require(:poder).
-            permit(:nome, :tipo)
+            permit(:nome, :tipo, :personagem_id)
     end
 
     def edit
