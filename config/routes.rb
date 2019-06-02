@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :poderes
   resources :personagens
 
+
   resources :personagens do
     member do
         get  :show

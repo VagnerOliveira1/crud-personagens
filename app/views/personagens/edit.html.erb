@@ -10,35 +10,44 @@
 <div class="container">
       <body>
 
+   <div class="container">
+
+        <h1>Editar <%=@personagem.nome%></h1>
+        <%= form_for @personagem do |f| %>
+        <p>
+        <%= f.label :nome %> <br />
+        <%= f.text_field :nome ,class:'form-control'%>
+        </p>
 
 
-    <h1>Editar Personagem</h1>
-    <%= form_for @personagem do |f| %>
-    <p>
-    <%= f.label :nome %> <br />
-    <%= f.text_field :nome %>
-    </p>
-    <p>
-    <%= f.label :forca %> <br />
-    <%= f.text_field :forca %>
-    </p>
-    <p>
-    <%= f.label :resistencia %> <br />
-    <%= f.text_field :resistencia %>
-    </p>
-    <p>
-    <%= f.label :agilidade %> <br />
-    <%= f.text_field :agilidade %>
-    </p>
-    <p>
-    <%= f.label :destreza %> <br />
-    <%= f.text_field :destreza %>
-    </p>
-    <p>
-    <%=f.submit "Atualizar ",class:'btn btn-primary' %>
-    </p>
-    <%= link_to "Voltar", @personagem,class: "btn btn-primary" %>
-    <% end %>
+          <div class="row">
+            <div class="col">
+                <%= f.label :forca %>
+                <%= f.text_field :forca ,class:'form-control'%>
+            </div>
+            <div class="col">
+                <%= f.label :resistencia %>
+                <%= f.text_field :resistencia ,class:'form-control'%>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+                <%= f.label :agilidade %>
+                <%= f.text_field :agilidade ,class:'form-control'%>
+
+            </div>
+            <div class="col">
+                <%= f.label :destreza %>
+                <%= f.text_field :destreza ,class:'form-control'%>
+            </div>
+          </div>
+            </p>
+          <%=f.submit "Atualizar ",class:'btn btn-outline-primary ' %>
+          </p>
+          <%= link_to "Voltar", @personagem,class: "btn btn-outline-primary" %>
+          <% end %>
+      </div>
+
 
 
      </body>

@@ -14,14 +14,14 @@
 
     <p id="notice"><%= notice %> </p>
     <h2>Personagem: <%= @personagem.nome %> </h2>
-    <ul>
-    <li>Força: <%= @personagem.forca %> </li>
-    <li>Resistencia: <%= @personagem.resistencia %> </li>
-    <li>Agilidade: <%= @personagem.agilidade %> </li>
-    <li>Destreza: <%= @personagem.destreza %> </li>
+    <ul class="list-group">
+    <li class="list-group-item">Força: <%= @personagem.forca %> </li>
+    <li class="list-group-item">Resistencia: <%= @personagem.resistencia %> </li>
+    <li class="list-group-item">Agilidade: <%= @personagem.agilidade %> </li>
+    <li class="list-group-item">Destreza: <%= @personagem.destreza %> </li>
     </ul>
 
-        <h2>Poderes</h2>
+        <h2>Poderes de  <%= @personagem.nome %> </h2>
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -36,7 +36,7 @@
               <tr>
                 <td><%= poder.nome %></td>
                 <td><%= poder.tipo %></td>
-                <td><%= link_to 'Ver', poder, class: "btn btn-success" %></td>
+                <td><%= link_to 'Ver', poder, class: "btn btn-outline" %></td>
                 <td><%= link_to 'Editar', edit_poder_path(poder), class: "btn btn-warning" %></td>
                 <td><%= link_to 'Excluir', poder, method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-danger" %>
               </tr>

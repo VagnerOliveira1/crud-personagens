@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <div class="container">
   <body>
 
@@ -14,11 +14,21 @@
 
 <p id="notice"><%= notice %></p>
 
-<%= form_tag("/personagens", method: "get") do %>
-  <b>Força: </b>
-  <%= number_field_tag(:forca, params[:forca]) %>
-  <%= submit_tag("Filtrar") %>
-<% end %>
+
+
+
+  <nav class="navbar navbar-light bg-light">
+      <%= form_tag("/personagens", method: "get") do %>
+
+
+        <%= number_field_tag(:forca, params[:forca]) %>
+
+        <%= submit_tag"Pesquisar força",class:'btn btn-outline-success my-2 my-sm-0' %>
+
+
+      <% end %>
+  </nav>
+
 
 <h1>Personagens</h1>
 
@@ -30,7 +40,8 @@
       <th>Resistencia</th>
       <th>Agilidade</th>
       <th>Destreza</th>
-      <th colspan="3">Opções</th>
+      <th colspan="3"><div class="mx-auto" style="width: 50px;">Opções</div></th>
+
     </tr>
   </thead>
 
@@ -42,10 +53,10 @@
         <td><%= personagem.resistencia %></td>
         <td><%= personagem.agilidade %></td>
         <td><%= personagem.destreza %></td>
-        <td><%= link_to 'Ver', personagem, class: "btn btn-success" %></td>
-        <td><%= link_to 'Editar', edit_personagem_path(personagem), class: "btn btn-warning" %></td>
+        <td><%= link_to 'Ver', personagem, class: "btn btn-outline-success" %></td>
+        <td><%= link_to 'Editar', edit_personagem_path(personagem), class: "btn btn-outline-warning" %></td>
 
-         <td><%= link_to 'Excluir',personagem_path(personagem), method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-danger" %>
+         <td><%= link_to 'Excluir',personagem_path(personagem), method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-outline-danger" %>
 
       </tr>
     <% end %>
@@ -54,7 +65,7 @@
 
 <br>
 
-<%= link_to 'Novo', new_personagem_path, class: "btn btn-primary"%>
+<%= link_to 'Novo', new_personagem_path, class: "btn btn-outline-primary"%>
 
  </body>
 </div>
