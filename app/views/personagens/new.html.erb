@@ -14,30 +14,36 @@
     <h1>Cadastro de Personagem</h1>
     <div class="form-group">
 
-    <%= form_for @personagem do |f| %>
-    <p>
-
+        <%= form_for @personagem do |f| %>
+        <p>
         <%= f.label :nome %> <br />
-        <%= f.text_field :nome %>
+        <%= f.text_field :nome ,class:'form-control'%>
         </p>
-        <p>
-        <%= f.label :forca %> <br />
-        <%= f.number_field :forca %>
-        </p>
-        <p>
-        <%= f.label :resistencia %> <br />
-        <%= f.number_field :resistencia %>
-        </p>
-        <p>
-        <%= f.label :agilidade %> <br />
-        <%= f.number_field :agilidade %>
-        </p>
-        <p>
-        <%= f.label :destreza %> <br />
-        <%= f.number_field :destreza %>
-        </p>
-   </div>
-    <p>
+
+
+          <div class="row">
+            <div class="col">
+                <%= f.label :forca %>
+                <%= f.text_field :forca ,class:'form-control'%>
+            </div>
+            <div class="col">
+                <%= f.label :resistencia %>
+                <%= f.text_field :resistencia ,class:'form-control'%>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+                <%= f.label :agilidade %>
+                <%= f.text_field :agilidade ,class:'form-control'%>
+
+            </div>
+            <div class="col">
+                <%= f.label :destreza %>
+                <%= f.text_field :destreza ,class:'form-control'%>
+            </div>
+          </div>
+    
+            </p>
     <%= f.submit "Criar",class:"btn btn-outline-primary"%>
     </p>
 
